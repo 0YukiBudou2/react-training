@@ -1,17 +1,18 @@
 export default function App(){
-    const width = 400;
-    const height = 400;
+    const width = 500;
+    const height = 500;
     const stickHeight = 30;
     const data = [
         {y : 100,value: 250,label : "A",color:"orange"},
         {y : 200,value: 200,label : "B",color:"purple"},
-        {y : 300,value: 100,label : "C",color:"pink"}
+        {y : 300,value: 100,label : "C",color:"pink"},
+        {y : 400,value: 75,label: "D",color:"skyblue"}
     ]
     return(
     <div>
         <svg width = {width} height = {height}>
             <g>
-                <line x1 = "100" x2 = "100" y1 = "0" y2 = "400" stroke="black"/>
+                <line x1 = "100" x2 = "100" y1 = "0" y2 = "500" stroke="black"/>
                 {data.map((item) =>{
                     return(
                         <g>
